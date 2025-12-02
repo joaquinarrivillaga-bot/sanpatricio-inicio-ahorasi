@@ -234,11 +234,7 @@ body{
   justify-content: center;
   margin-left: auto;
 }
-.foro-boton-busqueda:hover {
-    background-color: darkgreen;
-    color: gold;
-    border-color: gold;
-}
+
 .foro-botones-contenedor {
   max-width: 40%; 
   margin-top: 20px; 
@@ -262,6 +258,7 @@ body{
 .foro-boton:hover {
   background-color: #004d00; 
   color: gold;
+  transform: scale(1.05) rotate(-1deg);
   border-color: gold;
 }
 .rules-seccion {
@@ -280,7 +277,7 @@ body{
 .reglas {
   font-family: 'Dancing Script', cursive;
   font-style: italic; 
-  font-size: 3em; 
+  font-size: 50px; 
   color: gold;
   margin-bottom: 20px;
   background-color: darkgreen;
@@ -298,9 +295,10 @@ body{
   border-radius: 10px;
   padding: 20px;
   text-align: left; 
-  font-size: 1.5em; 
+  font-size: 25px; 
   line-height: 2.5;
 }
+
 @media screen and (max-width: 768px) {
 
 .header {
@@ -366,21 +364,21 @@ body{
 
   .bloque1,
   .bloque2 {
-      width: 90%;
-      max-width: 90%;
+      width: 80%;
+      max-width: 80%;
       font-size: large;
       margin: 0 auto; 
   }
 
   .titulo-pagina h1,
- 
-  .foro-titulo {
+    .foro-titulo {
     font-size: medium;
     height: 35px;
     margin-left: 60px;
     width: auto;
     max-width: none;
 }
+
 .foro-boton-busqueda {
     width: 90px; 
     font-size: 12px; 
@@ -399,6 +397,7 @@ body{
 .foro-boton {
     font-size: 11px; 
     padding: 3px 5px; 
+    margin-left: 20px;
 }
   .rules {
       width: 100%;
