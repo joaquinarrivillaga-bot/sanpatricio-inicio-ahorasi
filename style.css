@@ -301,3 +301,121 @@ body{
   font-size: 1.5em; 
   line-height: 2.5;
 }
+@media screen and (max-width: 768px) {
+
+.header {
+  flex-wrap: wrap; 
+  padding: 5px; 
+  width: 100%; 
+  height: auto; 
+  justify-content: center;
+}
+.boton {
+  font-size: small;
+  padding: 5px 10px;
+  margin: 5px; 
+}
+.Imagen1,
+    .imagen2 {
+        max-width: 50px;
+        max-height: 50px;
+        margin: 5px;
+    }
+  .barra-lateral-izquierda,
+    .barra-lateral-izquierda2 {
+        width: 30px; 
+        height: 100%;
+        display: flex; 
+        z-index: 10;
+    }
+
+    .barra-lateral-izquierda,
+    .barra-lateral-izquierda2 {
+        width: 50px; 
+        height: 100%;
+        display: flex; 
+        z-index: 10;
+        position: absolute; 
+        left: 0;
+    }
+
+
+    .boton-lateral {
+        font-size: 16px;
+        letter-spacing: 5px; 
+        padding: 5px; 
+    }
+    .boton-lateral2 {
+        font-size: 16px;
+        letter-spacing: 5px;
+        padding: 5px;
+    }
+
+    .bloques {
+        margin-left: 50px; 
+        padding: 0 10px;
+    }
+  .inicio {
+      min-height: auto; 
+  }
+  .bloques {
+      margin-left: 0; 
+      padding: 0 10px;
+      gap: 30px;
+  }
+
+  .bloque1,
+  .bloque2 {
+      width: 90%;
+      max-width: 90%;
+      font-size: large;
+      margin: 0 auto; 
+  }
+
+  .titulo-pagina h1,
+ 
+  .foro-titulo {
+    font-size: medium;
+    height: 35px;
+    margin-left: 60px;
+    width: auto;
+    max-width: none;
+}
+.foro-boton-busqueda {
+    width: 90px; 
+    font-size: 12px; 
+    padding: 8px; 
+    margin-left: 60px;
+    margin-right: 10px;
+}
+
+.foro-botones-contenedor {
+    margin-left: 60px; 
+    max-width: calc(100% - 70px);
+    grid-template-columns: 1fr 1fr; 
+    gap: 5px;
+}
+
+.foro-boton {
+    font-size: 11px; 
+    padding: 3px 5px; 
+}
+  .rules {
+      width: 100%;
+      margin-left: 0;
+      justify-content: center;
+  }
+  .reglas, 
+  .texto-reglas {
+      width: 90%;
+      max-width: 90%;
+  }
+
+  .foro-botones-contenedor {
+      margin-left: 10px; 
+      max-width: 95%; 
+      grid-template-columns: 1fr 1fr 1fr; 
+  }
+
+
+}
