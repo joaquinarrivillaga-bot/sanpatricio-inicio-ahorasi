@@ -3,117 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Patricio</title>
     <link rel="stylesheet" href="style.css">
+    <title> Un día con San Patricio</title>
 </head>
- <header class="header">
-        <img src="https://www.gifss.com/celebraciones/san-patricio/images/San-Patricio-27.gif"alt="Imagen1">
-        <nav class="main-nav">
-            <nav class="nav-list">
-                <a href="#job-gallery"class=boton-contacto>Register</a>
-                <a href="#register"class=boton-contacto>Log in</a>
-                <a href="https://joaquinarrivillaga-bot.github.io/sanpatricio-foro/"class=boton-contacto>Forum</a>
-                <a href="#"class=boton-contacto> Home</a>     
-            </nav>
-        </nav>
+<body>
+   
+    <header class="header">
+        <img src="https://www.gifss.com/celebraciones/san-patricio/images/San-Patricio-27.gif" class="Imagen1"></img>
        
+            <nav class="botoncito">
+                <a href="#"class="boton">Register</a>
+                <a href="#"class="boton">Log in</a>
+                <a href="#foro"class="boton">Forum</a>
+                <a href="#inicio"class="boton"> Home</a>     
+            </nav>
+
+ <img src="https://www.gifss.com/celebraciones/san-patricio/images/San-Patricio-04.gif" class="imagen2"></img>
      </header>
 
+  <section id="inicio" class="inicio">
+    <div class="barra-lateral-izquierda">
+        <p class="boton-lateral">FOLK LORE</p>   
+   </div>
+    <div class="titulo-pagina">
+        <h1>Un Día Con San Patricio</h1>
     </div>
-     <button class="toggle-sidebar">☰</button>
 
-<aside class="sidebar">
-    <nav class="sidebar-nav">
-        <a href="https://es.wikipedia.org/wiki/Día_de_San_Patricio" class="boton-contacto">text</a>
-        <a href="#job-gallery" class="boton-contacto">text</a>
-        <a href="#tenebrosa" class="boton-contacto">text</a>
-        <a href="#contacto" class="boton-contacto">text</a>
-    </nav>
-</aside>   
-</section>
-<body>
-           <section id="inicio" class="inicio">
-         <div class="hero-content">
-            <h1>¡FELIZ DIA DE SAN PATRICIO!</h1>
-             <p>¡¡Un espacio seguro para expresar nuestro amor por esta hermosa festividad!! </p>
-                 <div class="btn-container">
-                     <a href="https://japibeerarg.com.ar/japi" class="boton2">El secreto de la felicidad eterna...</a>
-                 </div>
-<!--esto se supone que java script no se bien que hace pero funca[pedir explicaciones(gracias san gepete por proporcionar tu sabiduria en js)]-->
-<script>
-  const sidebar = document.querySelector(".sidebar");
-  const toggleBtn = document.querySelector(".toggle-sidebar");
+        <div class="bloques">
+    
+            <div class="bloque1">
+                <p>CADA DIA ES SAN PATRICIO SI TE LO PROPONES</p>
+            </div>
+    
+            <div class="bloque2">
+                <p>Un espacio seguro para expresar nuestro amor por esta hermosa festividad</p>
+            </div>
+    
+            <img src="https://www.gifss.com/celebraciones/san-patricio/images/San-Patricio-11.gif" class="gif-bloque2">
+    
+            <div class="bloque1">
+                <p>SI QUIERES APOYAR ESTE PROYECTO PUEDES HACER UNA DONACION A:
+                PayPal: guglinja@gmail.com</p>
+            </div>
+    
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVJaVJebsR_5OVUYVU_NFE_zC9SPk7APpeeA&s" class="gif-bloque1">
+            
+        <div class="rules">
+            <a href="#rules-seccion" class="boton-rules">RULES</a>
+        </div>
+    
+    </section> 
+    <section id="foro" class="foro-seccion">
 
-  toggleBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("show");
-  });
-  
-</script>
+            <h2 class="foro-titulo">Bien venidos a EL FORO.</h2>
 
-<div id="modal-register" class="modal">
-  <div class="modal-content">
-    <span class="close" data-close-register>&times;</span>
-    <h2>Register</h2>
-
-    <form>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <button type="submit" class="boton-contacto">Create account</button>
-    </form>
-
-    <hr>
-    <button class="boton-contacto google-btn">Sign up with Google</button>
+            <div class="barra-lateral-izquierda2">
+                   <p class="boton-lateral2">your ad here</p>   
+              </div>
+       <div class="barra-busqueda">
+    <p class="search"> SEARCH </p>
   </div>
-</div>
-<div id="modal-login" class="modal">
-  <div class="modal-content">
-    <span class="close" data-close-login>&times;</span>
-    <h2>Log In</h2>
-
-    <form>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <button type="submit" class="boton-contacto">Log In</button>
-    </form>
-
-    <hr>
-    <button class="boton-contacto google-btn">Log in with Google</button>
-  </div>
-</div>
-<script>
-  const modalRegister = document.getElementById("modal-register");
-  const modalLogin = document.getElementById("modal-login");
-
-  const btnRegister = document.querySelector('a[href="#register"]'); 
-  const btnLogin = document.querySelector('a[href="#job-gallery"]'); 
-
-  const closeRegister = document.querySelector("[data-close-register]");
-  const closeLogin = document.querySelector("[data-close-login]");
-
-  btnRegister.addEventListener("click", e => {
-    e.preventDefault();
-    modalRegister.style.display = "flex";
-  });
-
-  btnLogin.addEventListener("click", e => {
-    e.preventDefault();
-    modalLogin.style.display = "flex";
-  });
-
-  
-  closeRegister.addEventListener("click", () => {
-    modalRegister.style.display = "none";
-  });
-
-  closeLogin.addEventListener("click", () => {
-    modalLogin.style.display = "none";
-  });
-
-  
-  window.addEventListener("click", e => {
-    if (e.target === modalRegister) modalRegister.style.display = "none";
-    if (e.target === modalLogin) modalLogin.style.display = "none";
-  });
-</script>
+   
+            <div class="foro-botones-contenedor">
+ 
+            <a href="#foro" class="foro-boton">BEERRR!!! :3</a>
+            <a href="#foro" class="foro-boton">Duendesillos</a>
+            <a href="#foro" class="foro-boton">Golddd!!!</a>
+            <a href="#foro" class="foro-boton">random</a>
+            <a href="#foro" class="foro-boton">ABBA!!!</a>
+            <a href="#foro" class="foro-boton">green fashion</a>
+        </div>
+    </section>
+    <section id="rules-seccion" class="rules-seccion">
+        <h1 class="reglas">Rules</h1>
+        <p class="texto-reglas"> 
+            1- No odiar a San Patricio<br>
+            2- Respeta a tus pares<br>
+            3- Todos los duendes merecen respeto y amor
+        </p>
+    </section>
 </body>
+
 </html>
